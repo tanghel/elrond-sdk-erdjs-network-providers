@@ -1,0 +1,45 @@
+{
+  "name": "elrond-sdk-erdjs-network-providers",
+  "version": "0.1.0",
+  "lockfileVersion": 2,
+  "requires": true,
+  "author": "ElrondNetwork",
+  "description": "Network Providers (API, Gateway) components (compatible with erdjs)",
+  "files": [
+    "out/**/*"
+  ],
+  "license": "GPL-3.0-or-later",
+  "main": "out/index.js",
+  "types": "out/index.d.js",
+  "packages": {},
+  "dependencies": {
+    "axios": "0.24.0",
+    "bignumber.js": "9.0.1",
+    "buffer": "6.0.3",
+    "json-bigint": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/assert": "1.4.6",
+    "@types/chai": "4.2.11",
+    "@types/mocha": "9.1.0",
+    "@types/node": "13.13.2",
+    "assert": "2.0.0",
+    "chai": "4.2.0",
+    "mocha": "9.2.2",
+    "ts-node": "9.1.1",
+    "tslint": "6.1.3",
+    "typedoc": "0.22.13",
+    "typescript": "4.1.2"
+  },
+  "scripts": {
+    "compile": "tsc -p tsconfig.json",
+    "lint": "tslint --project .",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "test": "npm run tests-unit",
+    "tests-devnet": "mocha $(find . -name '*.dev.net.spec.ts')",
+    "tests-localnet": "mocha $(find . -name '*.local.net.spec.ts')",
+    "tests-testnet": "mocha $(find . -name '*.test.net.spec.ts')",
+    "tests-unit": "mocha $(find . -name '*.spec.ts' ! -name '*.net.spec.*')"
+  }
+}
