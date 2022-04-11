@@ -8,7 +8,6 @@
             "DOM"
         ],
         "sourceMap": true,
-        "allowJs": true,
         "strict": true,
         "strictPropertyInitialization": true,
         "strictNullChecks": true,
