@@ -2,6 +2,13 @@
 
 Network Provider (API, Gateway) components (compatible with erdjs).
 
+The default classes from this package should **only be used as a starting point**. As your dApp matures, make sure you **switch to using your own network provider**, tailored to your requirements (whether deriving from the default ones or writing a new one, from scratch) that directly interacts with the Elrond API (or Gateway). Regarding this, please see the documentation referenced below.
+
+## Documentation
+
+ - [erdjs cookbook](https://docs.elrond.com/sdk-and-tools/erdjs/erdjs-cookbook)
+ - [extending erdjs](https://docs.elrond.com/sdk-and-tools/erdjs/extending-erdjs)
+
 ## Distribution
 
 [npm](https://www.npmjs.com/package/@elrondnetwork/erdjs-network-providers)
