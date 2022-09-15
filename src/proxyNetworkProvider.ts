@@ -185,6 +185,7 @@ export class ProxyNetworkProvider implements INetworkProvider {
                 ...this.config,
                 headers: {
                     "Content-Type": "application/json",
+                    ...this.config.headers,
                 },
             });
             let responsePayload = response.data.data;
@@ -216,3 +217,4 @@ export class ProxyNetworkProvider implements INetworkProvider {
         throw new ErrNetworkProvider(resourceUrl, originalErrorMessage, error);
     }
 }
+
